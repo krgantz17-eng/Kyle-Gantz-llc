@@ -1,19 +1,19 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Kyle Gantz LLC',
-  description: 'Professional website for Kyle Gantz LLC',
-}
+  title: "Kyle Gantz LLC | Software Design & Development",
+  description: "Professional software design and development services by Kyle Gantz",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>{children}</body>
     </html>
-  )
+  );
 }
