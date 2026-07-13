@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Kyle Gantz LLC | Software Design & Development",
-  description: "Professional software design and development services by Kyle Gantz",
+  description: "Kyle Gantz LLC provides professional software design, website development, and freelance technology solutions for businesses of all sizes.",
 };
 
 export default function RootLayout({
