@@ -3,90 +3,134 @@ import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Kyle Gantz LLC | Software Design & Development",
-  description: "Professional software design and development services by Kyle Gantz",
+  description:
+    "Kyle Gantz LLC provides professional software design, website development, and freelance technology solutions for businesses of all sizes.",
 };
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen bg-black text-white">
+
       <Navbar />
-      
-      {/* Hero Section */}
-      <section className="flex-1 bg-gradient-to-r from-blue-50 to-indigo-50 py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Professional Software Solutions
-            </h1>
-            <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
-              Custom design and development services tailored to your business needs.
-            </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-              Get Started
-            </button>
-          </div>
-        </div>
-      </section>
 
-      {/* Services Section */}
-      <section id="services" className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
+      <section className="px-6 py-24 max-w-6xl mx-auto">
+        <h1 className="text-5xl md:text-7xl font-bold">
+          Kyle Gantz LLC
+        </h1>
+
+        <h2 className="mt-6 text-2xl md:text-4xl text-blue-400">
+          Software Design • Development • Digital Solutions
+        </h2>
+
+        <p className="mt-8 text-lg text-gray-300 max-w-3xl">
+          Helping businesses transform ideas into powerful digital experiences
+          through custom software, modern websites, and innovative technology
+          solutions.
+        </p>
+
+        <div className="mt-10 flex gap-4">
+          <a
+            href="#contact"
+            className="rounded-lg bg-blue-600 px-6 py-3 font-semibold hover:bg-blue-500"
+          >
+            Get Started
+          </a>
+
+          <a
+            href="#services"
+            className="rounded-lg border border-gray-700 px-6 py-3 font-semibold hover:bg-gray-900"
+          >
             Services
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                Web Development
-              </h3>
-              <p className="text-gray-600">
-                Building modern, responsive web applications using latest technologies and best practices.
-              </p>
-            </div>
-            <div className="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                UI/UX Design
-              </h3>
-              <p className="text-gray-600">
-                Creating beautiful and intuitive user interfaces that engage and delight your users.
-              </p>
-            </div>
-            <div className="p-8 border border-gray-200 rounded-lg hover:shadow-lg transition-shadow">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                Consulting
-              </h3>
-              <p className="text-gray-600">
-                Expert guidance on technology selection, architecture, and implementation strategies.
-              </p>
-            </div>
-          </div>
+          </a>
         </div>
       </section>
 
-      {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl font-bold text-center mb-12 text-gray-900">
-            Recent Projects
+
+      <section id="about" className="px-6 py-20 bg-gray-950">
+        <div className="max-w-6xl mx-auto">
+
+          <h2 className="text-3xl font-bold">
+            About Kyle Gantz LLC
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">Project One</h3>
-              <p className="text-gray-600 mb-4">
-                Description of a recent project showcasing expertise in modern web technologies.
-              </p>
-            </div>
-            <div className="bg-white p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900">Project Two</h3>
-              <p className="text-gray-600 mb-4">
-                Another successful project demonstrating design and development capabilities.
-              </p>
-            </div>
-          </div>
+
+          <p className="mt-6 text-gray-300 max-w-4xl">
+            Kyle Gantz LLC is a software design and development company
+            specializing in helping businesses of all sizes establish and
+            improve their digital presence. We create custom solutions that
+            combine creativity, technology, and functionality to help clients
+            achieve their goals.
+
+            Whether you are a small business looking to build your first
+            online presence or a larger company needing custom technology
+            solutions, Kyle Gantz LLC provides reliable freelance development
+            and software services tailored to your needs.
+          </p>
+
         </div>
       </section>
+
+
+      <section id="services" className="px-6 py-20 max-w-6xl mx-auto">
+
+        <h2 className="text-3xl font-bold mb-8">
+          Our Services
+        </h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+
+          {[
+            "Custom Software Development",
+            "Website Design & Development",
+            "Web Applications",
+            "UI/UX Design",
+            "Business Automation",
+            "Freelance Development"
+          ].map((service) => (
+
+            <div
+              key={service}
+              className="rounded-xl border border-gray-800 bg-gray-950 p-6"
+            >
+              <h3 className="text-xl font-semibold text-blue-400">
+                {service}
+              </h3>
+
+              <p className="mt-3 text-gray-400">
+                Professional technology solutions designed around your business goals.
+              </p>
+
+            </div>
+
+          ))}
+
+        </div>
+
+      </section>
+
+
+      <section id="contact" className="px-6 py-20 bg-gray-950">
+
+        <div className="max-w-6xl mx-auto">
+
+          <h2 className="text-3xl font-bold">
+            Contact
+          </h2>
+
+          <p className="mt-4 text-gray-300">
+            Email: kylegantzllc@gmail.com
+          </p>
+
+          <p className="text-gray-300">
+            Phone: (814) 424-4044
+          </p>
+
+        </div>
+
+      </section>
+
 
       <Footer />
+
     </main>
   );
 }
