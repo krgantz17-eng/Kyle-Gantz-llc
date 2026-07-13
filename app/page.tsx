@@ -1,3 +1,4 @@
+import Portfolio from "@/components/Portfolio";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
@@ -64,8 +65,39 @@ export default function Home() {
           </div>
         </div>
       </section>
+<Portfolio />
+<section id="contact" className="px-6 py-20 bg-gray-950">
 
-      <section id="contact" className="px-6 py-20 max-w-6xl mx-auto">
+  <div className="max-w-6xl mx-auto">
+
+    <h2 className="text-3xl font-bold">
+      Let's Build Something Great
+    </h2>
+
+    <p className="mt-4 text-gray-300 max-w-2xl">
+      Have a project idea, need a website, or looking for custom software
+      solutions? Kyle Gantz LLC is ready to help turn your ideas into reality.
+    </p>
+
+    <div className="mt-8">
+
+      <a
+        href="mailto:kylegantzllc@gmail.com"
+        className="inline-block rounded-lg bg-blue-600 px-8 py-3 font-semibold hover:bg-blue-500"
+      >
+        Email Kyle Gantz LLC
+      </a>
+
+    </div>
+
+    <div className="mt-6 text-gray-300">
+      <p>Email: kylegantzllc@gmail.com</p>
+      <p>Phone: (814) 424-4044</p>
+    </div>
+
+  </div>
+
+</section>
         <h2 className="text-3xl font-bold">
           Contact Us
         </h2>
